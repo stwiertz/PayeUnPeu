@@ -49,7 +49,7 @@ const App= ()=> {
 
     const onCaution = React.useCallback(() => {
         if(totalCaution + addingMode>0){
-            setTotalCaution(prevState => prevState + addingMode);
+            setTotalCaution(prevState => prevState + addingMode *2);
         }
     },[order, addingMode]);
 
@@ -88,7 +88,7 @@ const App= ()=> {
             }catch(error){
             }
         }
-        setShowHistory(false)
+        setShowHistory(false);
     }, [order]);
 
 
